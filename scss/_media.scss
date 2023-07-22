@@ -19,6 +19,71 @@
       }
     }
   }
+
+  // About Section
+  #about {
+
+    .about-info {
+      margin: 6rem 0;
+      display: grid;
+      grid-template-areas:
+        'bioimage'
+        'bio';
+      grid-template-rows: auto 1fr;
+      grid-gap: 1rem;
+    }
+
+    // Grid Area - Frame 
+    .frame {
+      width: 100%;
+      height: auto;
+      border-top: none;
+    }
+
+    // Image
+    .bio-image {
+      grid-area: bioimage;
+      position: static;
+      width: 100%;
+      height: auto;
+      border: none;
+    }
+
+    // Main Bio
+    .bio {
+      grid-area: bio;
+      margin-top: 2rem;
+      padding: 0;
+    }
+
+    // Details
+    .details {
+      margin-top: 1rem;
+      line-height: 2;
+      font-size: 1.2rem;
+    }
+  }
+
+  // Opinion
+  #testimonial {
+
+    .testimonials {
+      flex-direction: column;
+
+      .opinion {
+        padding: 1rem;
+      }
+    }
+  }
+
+  // Blog Post/Article
+  #blog-post {
+    text-align: left;
+
+    .posts {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 // Mobile Phones 
@@ -203,7 +268,7 @@
 }
 
 // @Media 420px Screens  
-@media (max-width: 420px) {
+@media (max-width: 450px) {
 
   .container {
     padding: 0 1.5rem;

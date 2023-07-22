@@ -346,7 +346,7 @@ h4 {
 
 #header-home:before {
   content: '';
-  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  background: url("/img/showcase.jpg") no-repeat center right/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -581,7 +581,39 @@ h4 {
     #header-home .home-content .tope {
       font-size: 3rem; }
     #header-home .home-content .dev {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  #about .about-info {
+    margin: 6rem 0;
+    display: grid;
+    grid-template-areas: 'bioimage' 'bio';
+    grid-template-rows: auto 1fr;
+    grid-gap: 1rem; }
+  #about .frame {
+    width: 100%;
+    height: auto;
+    border-top: none; }
+  #about .bio-image {
+    grid-area: bioimage;
+    position: static;
+    width: 100%;
+    height: auto;
+    border: none; }
+  #about .bio {
+    grid-area: bio;
+    margin-top: 2rem;
+    padding: 0; }
+  #about .details {
+    margin-top: 1rem;
+    line-height: 2;
+    font-size: 1.2rem; }
+  #testimonial .testimonials {
+    flex-direction: column; }
+    #testimonial .testimonials .opinion {
+      padding: 1rem; }
+  #blog-post {
+    text-align: left; }
+    #blog-post .posts {
+      grid-template-columns: 1fr; } }
 
 @media (max-width: 500px) {
   .container {
@@ -661,7 +693,7 @@ h4 {
   .menu-wrap .menu > div {
     width: 40vw; } }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .container {
     padding: 0 1.5rem; }
   #header-home .home-content {
