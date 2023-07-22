@@ -1,7 +1,7 @@
 // Containers
 .container {
   max-width: $website-width;
-  padding: 0 1.5rem;
+  padding: 0 3rem;
   margin: auto;
   overflow: hidden;
 }
@@ -13,6 +13,7 @@
   transition: all 0.5s;
   border: none;
   cursor: pointer;
+  text-transform: uppercase
 }
 
 .btn {
@@ -33,6 +34,11 @@
     color: #f4f4f4;
     background: $dark-color;
   }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover {
+  background-color: $main-color;
 }
 
 // Backgrounds
@@ -57,17 +63,19 @@
 }
 
 .lead {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  padding-bottom: 3rem;
   text-transform: uppercase;
 }
 
 .lead-2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: -.9rem;
+  // padding-bottom: 0.2rem;
   text-transform: uppercase;
-  line-height: 1;
-  position: relative;
-  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
 }
 
 .text-center {
@@ -104,17 +112,6 @@
   &-4 {
     margin: 4rem 0;
   }
-}
-
-.box {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.cnt {
-  margin-top: 1rem;
-  line-height: 2;
-  font-size: 1.7rem;
 }
 
 span {

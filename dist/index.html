@@ -5,15 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/5cc6b0f723.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/main.css">
-  <title>TopeAanu | Portfolio Website | Frontend Developer</title>
+  <title>TopeAanu - Portfolio Website - Frontend Developer</title>
 </head>
 <body>
   <!-- Header -->
   <header id="header-home">
     <div class="container">
       <nav id="main-nav">
+
+        <!-- Hamburger Menu -->
         <div class="menu-wrap">
           <input type="checkbox" class="toggler">
           <div class="hamburger"><div></div></div>
@@ -21,58 +23,68 @@
             <div>
               <div>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html">About</a></li>
+                  <li><a href="index.html">Projects</a></li>
+                  <li><a href="index.html">Contact</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-
+        
+        <!-- Socials & Logo -->
         <ul>
-          <li>Ta</li>
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="fab fa-github"></i></li>
-          <li><i class="fab fa-facebook"></i></li>
-          <li><i class="fab fa-linkedin fax3"></i></li>
+          <li class="logo"><a href="#">Ta</a></li>
+          <li><a href="https://twitter.com/tope_fasasi"><i class="fab fa-twitter fa-1x"></i></a></li>
+          <li><a href="https://github.com/TopeAanu"><i class="fab fa-github fa-1x"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook fa-1x"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin fa-1x"></i></a></li>
         </ul>
       </nav>
 
+      <!-- Home Section -->
       <div class="home-content">
-        <h1>Hello!
-        </h1>
-        <h1>I'm Tope Aanu</h1>
-        <p class="lead">
+        <p class="hello">Hello!
+        </p>
+        <p class="tope">I'm Tope Aanu</p>
+        <p class="dev">
           Frontend Developer
         </p>
       </div>
     </div>
   </header>
 
-  <section id="about-a" class="py-3 my-3">
+  <!-- About Section -->
+  <section id="about">
     <div class="container">
+
+      <!-- Info -->
       <div class="about-info">
+
+        <!-- Frame & Image -->
         <div class="frame">
-          <img src="/img/showcase.jpg" alt="About" class="bio-image">
+          <img src="/img/about_img2.png" alt="About" class="bio-image">
         </div>
 
+        <!-- About Me -->
         <div class="bio">
-          <div class="box">
-              
-            <h1 class="lead-2">About Me</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum, quidem laborum sequi repellat excepturi fugiat quos alias odio iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, aliquam tempore praesentium aliquid deserunt illum? Enim quam voluptatibus aut unde!</p>
+
+          <!-- Lead/font 2 -->
+          <h1 class="lead-2">About Me</h1>
+          <div>
+            <p>Hello, my name is Tope Fasasi and I am an enthusiastic front-end developer with a passion for solving technical problems and writing clean, efficient code. I am proficient in HTML5, CSS3, SASS, Git, and GitHub, and I am currently learning JavaScript. I believe in competence, continuous learning, and building. "Leave me with the code" is my motto (Haha). I am open to mentorship, collaboration with like-minded individuals, and building strong relationships within the tech community. As you continue reading, you will learn more about me and my experience.</p>
           </div>
 
-            <div class="cnt">
-
-              <ul class="details">
-                <li><span>Name:</span> Fasasi Tope Elijah</li>
-                <li><span>Phone:</span> +234 814 720 2316</li>
+          <!-- Details & About -->
+            <div class="details">
+              <ul>
+                <li><span>Name:</span> Tope Fasasi</li>
+                <li><span>Phone:</span> (+234) 814 720 2316</li>
                 <li><span>Email:</span> topefasasi99@gmail.com</li>
-                <li><span>Address:</span> Port Harcourt</li>
+                <li><span>Address:</span> Port Harcourt, Rivers, Nigeria</li>
                 <li><span>Date Of Birth:</span> 9 September 1999</li>
+                <!-- <li><span>Education:</span> University Of Port Harcourt, Finance & Banking</li> -->
               </ul>
             </div>
         </div>
@@ -80,156 +92,134 @@
     </div>
   </section>
 
-  <section id="interest" class="my-3">
+  <!-- Interests Section -->
+  <section id="interest" class="py-4 text-center">
     <div class="container">
+
+      <!-- My Interests -->
       <div class="interests">
-        <h1 class="lead">My Interest</h1>
+        <h1 class="lead">My Interests</h1>
+
+        <!-- Interest Container -->
         <div>
           <div>
-            <i class="fab fa-twitter fa-3x"></i>
-            <h1>Hello</h1>
+            <i class="fa fa-laptop fa-3x"></i>
+            <p>Coding</p>
           </div>
           <div>
-            <i class="fab fa-github fa-3x"></i>
-            <h1>Hello</h1>
+            <i class="fa fa-pencil fa-3x"></i>
+            <p>Writing</p>
           </div>
           <div>
-            <i class="fab fa-facebook fa-3x"></i>
-            <h1>Hello</h1>
+            <i class="fa fa-music fa-3x"></i>
+            <p>Music</p>
           </div>
           <div>
-            <i class="fab fa-linkedin fa-3x"></i>
-            <h1>Hello</h1>
+            <i class="fa fa-book fa-3x"></i>
+            <p>Reading</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="work" class="my-3 text-center">
+  <!-- Work Experience -->
+  <section id="work-experience" class="py-4 text-center">
     <div class="container">
-      <div class="work-content py-3">
-        <h1 class="lead">Work Experience</h1>
-        <div class="experience">
-          <i class="fas fa-person fa-3x"></i>
-          <h2>Frontend Developer</h2>
-          <p>Feb 2018-Nov/</p>
-        </div>
+      <h1 class="lead">Work Experience</h1>
+      <div class="experience">
+        <i class="fas fa-laptop fa-3x"></i>
+        <h2>Vivid Star Global Concept</h2>
+        <p><span>Role:</span> Graphics Designer & Large Format Printer Operator</p>
+        <p><span>Date:</span> Feb 2018 - Nov 2018</p>
       </div>
     </div>
   </section>
 
-  <section id="skill" class="my-3">
+  <!-- Professional Skills -->
+  <section id="skill" class="py-4">
     <div class="container">
       <h1 class="lead text-center">Professional Skill</h1>
-      <div class="skill-set py-3">
-        <div class="con">
+
+      <!-- Skills -->
+      <div class="skill-set">
+        <div class="skill-container">
           <p>HTML</p>
           <div class="progress">
             <div style="width:100%"></div>
           </div>
         </div>
-        <div class="con">       
+        <div class="skill-container">       
           <p>CSS</p>
           <div class="progress">
             <div style="width:80%"></div>
           </div>
         </div>
-        <div class="con">
+        <div class="skill-container">
           <p>SASS</p>
           <div class="progress">
             <div style="width:100%"></div>
           </div>
         </div>
-        <div class="con">
+        <div class="skill-container">
           <p>BOOSTRAP</p>
           <div class="progress">
             <div style="width:100%"></div>
           </div>
         </div>
-        <div class="con">
+        <div class="skill-container">
           <p>Graphics Design</p>
           <div class="progress">
             <div style="width:40%"></div>
           </div>
         </div>
-        <div class="con">
+        <div class="skill-container">
           <p>Git & Github</p>
           <div class="progress">
-            <div style="width:100%"></div>
+            <div style="width:80%"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="work" class="my-3 py-3 text-center">
+  <!-- Works/projects -->
+  <section id="project" class="py-3 text-center">
     <div class="container">
-      <h1 class="lead py-3">Some Of My Works</h1>
+      <h1 class="lead">Some Of My Project</h1>
+      
+      <!-- Item Images & Texts -->
       <div class="items">
         <div class="item">
           <div class="item-image">
-            <img src="/img/showcase.jpg" alt="">
+            <img src="/img/project_view/view1.png" alt="">
           </div>
           <div class="item-text">
             <div class="item-text-wrap">
-              <p class="item-text-category">Flexbox</p>
-              <h2 class="item-text-title">Flex Row</h2>
+              <p class="item-text-category">Flex/Grid</p>
+              <p class="item-text-title">HTML & CSS</p>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="item-image">
-            <img src="/img/showcase.jpg" alt="">
+            <img src="/img/project_view/view2.png" alt="">
           </div>
           <div class="item-text">
             <div class="item-text-wrap">
-              <p class="item-text-category">Flexbox</p>
-              <h2 class="item-text-title">Flex Row</h2>
+              <p class="item-text-category">Flex/Grid</p>
+              <p class="item-text-title">HTML & CSS</p>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="item-image">
-            <img src="/img/showcase.jpg" alt="">
+            <img src="/img/project_view/view3.png" alt="">
           </div>
           <div class="item-text">
             <div class="item-text-wrap">
-              <p class="item-text-category">Flexbox</p>
-              <h2 class="item-text-title">Flex Row</h2>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-image">
-            <img src="/img/showcase.jpg" alt="">
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">Flexbox</p>
-              <h2 class="item-text-title">Flex Row</h2>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-image">
-            <img src="/img/showcase.jpg" alt="">
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">Flexbox</p>
-              <h2 class="item-text-title">Flex Row</h2>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-image">
-            <img src="/img/showcase.jpg" alt="">
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">Flexbox</p>
-              <h2 class="item-text-title">Flex Row</h2>
+              <p class="item-text-category">Flex/Grid</p>
+              <p class="item-text-title">HTML & CSS</p>
             </div>
           </div>
         </div>
@@ -237,79 +227,82 @@
     </div>
   </section>
 
-  <sectiion id="testimonial" class="my-3 py-4 text-center">
+  <!-- Friends Opinion -->
+  <section id="testimonial" class="py-3 text-center">
     <div class="container">
       <h1 class="lead">Friends Opinion</h1>
+
       <div class="testimonials">
         <div class="opinion">
-          <img src="/img/showcase.jpg" alt="">
+          <img src="/img/user_opinion/female1.png" alt="">
           <p class="p1">Tope Aanu</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, exercitationem earum asperiores optio rem expedita?</p>
+          <p>Hey, Tope. This is beautiful. I love the simplicity and uniqueness of the project. Keep the good work on. You're doing well. Xoxo. </p>
         </div>
         <div class="opinion">
-          <img src="/img/showcase.jpg
-          " alt="">
+          <img src="/img/user_opinion/male1.jpg" alt="">
           <p class="p1">Tope Aanu</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, exercitationem earum asperiores optio rem expedita?</p>
+          <p>This is awesome!! It's straightforward and just too unique. The code also is readable. Keep the good work. Thumbs up!</p>
         </div>
         <div class="opinion">
-          <img src="/img/showcase.jpg
-          " alt="">
+          <img src="/img/user_opinion/female2.png" alt="">
           <p class="p1">Tope Aanu</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, exercitationem earum asperiores optio rem expedita?</p>
+          <p>Hey, Tope. This is beautiful. I love the simplicity and uniqueness of the project. Keep the good work on. You're doing well. Xoxo.</p>
         </div>
       </div>
     </div>
-  </sectiion>
+  </section>
 
-  <section id="hire-me" class="my-3 text-center">
+  <!-- Hire Me Secction -->
+  <section id="hire-me" class="py-3 text-center">
     <div class="container">
-      <div class="hire py-3">
+      <div class="hire">
+
+        <h1 class="lead">Let's work</h1>
         <div>
           <i class="fas fa-message fa-3x"></i>
         </div>
         <div>
-          <h1>Higher me for your next project</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio libero qui ea excepturi harum, perferendis architecto quaerat maxime tenetur voluptatibus?</p>
         </div>
         <div>
-          <a href="#" class="btn-light">Hire Me</a>
+          <a href="#" class="btn-light btn">Hire Me</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="blog-post" class="my-3 text-center">
+  <!-- Blog Post Section -->
+  <section id="blog-post" class="py-3 text-center">
     <div class="container">
-      <h1 class="lead">Blog post</h1>
+      <h1 class="lead">Blog posts</h1>
       <div class="posts">
         <div class="post">
-          <img src="/img/showcase.jpg" alt="">
+          <img src="/img/article_img/article1.png" alt="">
           <div class="post-container">
 
-            <h2><a href="#"></a>Lorem ipsum dolor sit amet consectetur.</h2>
-            <p>9, September 2023 | 5 Comments</p>
-            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus, velit ipsum omnis cupiditate dolorem officiis, dolores neque ratione, consequatur blanditiis maxime eos ex quisquam voluptatibus unde ab aliquam. Eligendi.</p>
+            <p><a href="#">Lorem ipsum dolor sit amet consectetur</a></p>
+            <p class="date">9, September 2023 | 5 Comments</p>
+            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus, velit ipsum omnis cupiditate dolorem officiis, dolores neque ratione.</p>
             <a href="#" class="btn-light">Read More</a>
           </div>
         </div>
         <div class="post">
-          <img src="/img/showcase.jpg" alt="">
+          <img src="/img/article_img/article2.png" alt="">
           <div class="post-container">
 
-            <h2><a href="#"></a>Lorem ipsum dolor sit amet consectetur.</h2>
-            <p>9, September 2023 | 5 Comments</p >
-            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus, velit ipsum omnis cupiditate dolorem officiis, dolores neque ratione, consequatur blanditiis maxime eos ex quisquam voluptatibus unde ab aliquam. Eligendi.</p>
+            <p><a href="#">Lorem ipsum dolor sit amet consectetur</a></p>
+            <p class="date">9, September 2023 | 5 Comments</p >
+            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus, velit ipsum omnis cupiditate dolorem officiis, dolores neque ratione.</p>
             <a href="#" class="btn-light">Read More</a>
           </div>
         </div>
         <div class="post">
-          <img src="/img/showcase.jpg" alt="">
+          <img src="/img/article_img/article3.png" alt="">
           <div class="post-container">
 
-            <h2><a href="#"></a>Lorem ipsum dolor sit amet consectetur.</h2>
-            <p>9, September 2023 | 5 Comments</p>
-            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus, velit ipsum omnis cupiditate dolorem officiis, dolores neque ratione, consequatur blanditiis maxime eos ex quisquam voluptatibus unde ab aliquam. Eligendi.</p>
+            <p><a href="#">Lorem ipsum dolor sit amet consectetur</a></p>
+            <p class="date">9, September 2023 | 5 Comments</p>
+            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus, velit ipsum omnis cupiditate dolorem officiis, dolores neque ratione.</p>
             <a href="#" class="btn-light">Read More</a>
           </div>
         </div>
@@ -318,14 +311,15 @@
     </div>
   </section>
 
+  <!-- Contact Me Section -->
   <section id="contact" class="py-3 text-center">
     <div class="container">
-      <h1 class="lead my-3">Contact Me</h1>
+      <h1 class="lead">Contact Me</h1>
       <form action="">
         <div class="text-fields">
 
           <input type="text" class="text-input name-input" placeholder="Name" name="name">
-          <input type="email" class="text-input email-input" placeholder="Email Address" name="email">
+          <input type="email" class="text-input email-input" placeholder="Email" name="email">
           <textarea class="text-input message-input" placeholder="Messge" name="message"></textarea>
         </div>
         <button type="submit" class="btn-light form-btn">Submit</button>
@@ -333,16 +327,18 @@
     </div>
   </section>
 
-  <section id="gratitude" class="my-3 text-center">
+  <!-- Appreciation Section -->
+  <section id="gratitude" class="py-3 text-center">
     <div class="container">
+      <h1 class="lead">Appreciation</h1>
       <div>
-        <h1 class="lead">Appreciation</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ab nostrum perspiciatis tempora, quaerat aspernatur voluptatem. Eaque doloremque numquam ipsam nostrum deleniti accusamus. Quo, incidunt. Id blanditiis cum libero rerum.</p>
+        <p>Thank you for taking the time to review my portfolio website. I appreciate your feedback and value your opinion. Please feel free to reach out to me through any of the social media platforms listed below. I welcome any constructive criticism you may have and look forward to hearing your thoughts.</p>
       </div>
     </div>
   </section>
 
-  <footer id="main-footer">
+  <!-- Footer Section -->
+  <footer id="main-footer" class="py-2">
     <div class="container">
       <div class="footer-content">
 
@@ -351,8 +347,8 @@
           <i class="fab fa-instagram fa-1x"></i>
           <i class="fab fa-linkedin fa-1x"></i>
 
-        <p>&copy; Copyright 2023, All Rights Reserved</p>
-      </div>
+          <p>&copy; Copyright 2023, All Rights Reserved</p>
+        </div>
     </div>
   </footer>
 </body>

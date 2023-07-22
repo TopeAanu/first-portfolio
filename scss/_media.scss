@@ -1,0 +1,213 @@
+// Tablets & Smaller Devices
+@media (max-width: 800px) {
+  #header-home {
+
+    .home-content {
+      padding-top: 10rem;
+
+      .hello {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .tope {
+        font-size: 3rem;
+      }
+
+      .dev {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  // About Section
+  #about {
+
+    .about-info {
+      margin: 6rem 0;
+      display: grid;
+      grid-template-areas:
+        'bioimage'
+        'bio';
+      grid-template-rows: auto 1fr;
+      grid-gap: 1rem;
+    }
+
+    // Grid Area - Frame 
+    .frame {
+      width: 100%;
+      height: auto;
+      border-top: none;
+    }
+
+    // Image
+    .bio-image {
+      grid-area: bioimage;
+      position: static;
+      width: 100%;
+      height: auto;
+      border: none;
+    }
+
+    // Main Bio
+    .bio {
+      grid-area: bio;
+      margin-top: 2rem;
+      padding: 0;
+    }
+
+    // Details
+    .details {
+      margin-top: 1rem;
+      line-height: 2;
+      font-size: 1.2rem;
+    }
+  }
+
+  // Interest
+  #interest {
+ 
+    .interests > div > div{
+
+      .fa {
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 2rem;
+      }
+    
+      p {
+        visibility: visible;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  // Work Experience
+  #work-experience {
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  // Skill
+  #skill {
+
+    .skill-set {
+      grid-template-columns: 1fr;
+      grid-gap: .5rem;
+    }
+  }
+
+  // Project
+  #project {
+
+    .items {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Opinion
+  #testimonial {
+  
+    .testimonials {
+      flex-direction: column;
+    }
+  }
+
+  // Hire Me
+  #hire-me {
+
+    .hire {
+      margin: 0;
+
+      p {
+        padding: 0;
+      }
+    }
+  }
+
+  // Blog Post/Article
+  #blog-post {
+    text-align: left;
+
+    .posts {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Contact 
+  #contact {
+
+    .text-fields {
+      grid-template-areas: 
+        'name'
+        'email'
+        'message';
+    }
+  }
+
+  // Appreciation Section
+  #gratitude {
+
+    p {
+      padding: 0 .5rem;
+    }
+  }
+
+  // Reduce All Leads
+  #interest,
+  #work-experience,
+  #skill,
+  #project,
+  #testimonial,
+  #hire-me,
+  #blog-post,
+  #contact,
+  #gratitude {
+
+    .lead {
+      font-size: 1.7rem;
+      margin-top: 1rem;
+      padding-bottom: 2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  #about {
+
+    .lead-2 {
+      font-size: 1.7rem;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .menu-wrap .menu > div {
+    width: 40vw;
+  }
+}
+
+// @Media 420px Screens  
+@media (max-width: 420px) {
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  // Home
+  #header {
+    // Content
+    &-home .home-content {
+      padding-top: 90%;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 @import 'config';
 @import 'utilities';
 @import 'hamburger';
-@import 'item_grid';
+@import 'project';
 
 // General Styles
 * {
@@ -10,10 +10,10 @@
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open', sans-serif;
   line-height: 1.5;
   background: $dark-color;
-  color: #fff;
+  color: $light-color;
 }
 
 a {
@@ -39,44 +39,73 @@ h4 {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 1.5rem;
-
+  padding-top: .5rem;
+  
+  // Socials & Logo
   ul {
+    position: relative;
+    top: 0;
+    left: 0;
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    align-items: center;
+
+    .logo {
+      font-size: 1rem;
+      font-weight: bold;
+      padding-right: 1rem;
+      cursor: pointer;
+    }
+
+    .logo:hover {
+      transition: all .5s;
+      opacity: .5;
+    }
 
     li {
-      padding-left: 3rem;
+      padding-left: 2rem;
+
+      .fab:hover {
+        transition: all .5s;
+        opacity: .5;
+      }
     }
   }
 }
 
-// Header
+// Header/Home-section
 #header {
-  // Header Home
-  &-home {
-    color: set-text-color($dark-color);
-    background: $dark-color;
-    height: 100vh;
-    position: relative;
 
-    // Header Content
+  // Home 
+  &-home {
+    color: #fff;
+    background: $background-color;
+    height: 100vh;
+
+    // Content
     .home-content {
       text-align: left;
-      padding-top: 16%;
-      z-index: 1;
+      padding-top: 18%;
+      color: inherit;
 
-      h1 {
-        font-size: 7rem;
-        line-height: 1.3;
+      .hello {
+        font-size: 5rem;
+        line-height: 1.2;
       }
 
-      p {
-        font-size: 3rem;
+      .tope {
+        font-size: 4.5rem;
+        margin-top: -1rem;
+      }
+
+      .dev {
+        text-transform: uppercase;
+        font-size: 2rem;
       }
     }
   }
-
+  
+  // Home-Before
   &-home:before {
     content: '';
     background: $bg-image no-repeat center right / cover;
@@ -85,107 +114,142 @@ h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.2;
   }
+
 }
 
-// About Sections
+// About Section
 #about {
+  // height: 100vh;
 
-  // About a
-  &-a {
-    .about-info {
-      display: grid;
-      grid-template-areas: 
-        'frame bio';
-      grid-gap: 5rem;
-    }
+  // About Info
+  .about-info {
+    margin: 6rem 0;
+    display: grid;
+    grid-template-areas:
+      'frame bio';
+    grid-gap: 1rem;
+  }
 
-    // Grid Area 
-    .frame {
-      width: 500px;
-      position: relative;
-      height: 500px;
-      border: #fff solid 10px;
-      // margin-top: 3rem;
-      // margin-left: 3rem;
-    }
+  // Grid Area - Frame 
+  .frame {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background: $background-color;
+    border-top: $light-color solid 1px;
+  }
 
-    .bio-image {
-      grid-area: bioimage;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      margin-top: 3rem;
-      margin-left: 3rem;
-    }
-    
-    .bio {
-      grid-area: bio;
-      padding-left: 15rem;
-      font-size: 1.5rem;
-    }
+  // Image
+  .bio-image {
+    grid-area: bioimage;
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    max-width: 100%;
+    max-height: 100%;
+    top: 3rem;
+    left: 4rem;
+    border: .5px $dark-color solid;
+    border-bottom: $light-color solid 1px;
+    border-right: $light-color solid 1px;
+  }
+  
+  // Main Bio
+  .bio {
+    grid-area: bio;
+    padding-left: 10rem;
+  }
+  
+  // Details
+  .details {
+    margin-top: 1rem;
+    line-height: 2;
+    font-size: 1.2rem;
   }
 }
 
+// Interests Section
 #interest {
-  .interests {
-    padding: 0 5rem 0 5rem;
+  background: $background-color;
+  // height: 50vh;
 
+  // My Interests
+  .interests {
+
+    // Interest Container
     div {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
 
+      // Interest Contents
       div {
         flex-direction: column;
         text-align: center;
+        line-height: 3;
 
-        i {
+        .fa {
           justify-self: center;
-          border: 2px #fff solid;
+          border: 1px #fff solid;
           border-radius: 50%;
-          padding: 2.5rem;
+          padding: 1.5rem;
           align-items: center;
           transition: all 1s;
         }
         
-        h1 {
-          margin-top: 1.5rem;
+        p {
           visibility: hidden;
-          font-size: 2rem;
+          font-size: 1.5rem;
+          text-transform: uppercase;
           transition: all 1s;
+          text-align: center;
         }
 
+        // Hover - Brings Out Text
         &:hover {
           i {
             background: $main-color;
+            border: none;
           }
 
-          h1 {
+          p {
             visibility: visible;
           }
         }
-
-        
       }
     }
   }
 }
 
+// Work Experience
+#work-experience {
+
+  // Experience Content
+  .experience {
+    margin-top: -1.5rem;
+    line-height: 1.7;
+  }
+}
+
+// Professional Skills
 #skill {
+  // height: 60vh;
+  background: $background-color;
+  
   .skill-set {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 
-    .con {
+    .skill-container {
       padding: 1rem;
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
 
     .progress {
       overflow: hidden;
-      height: 20px;
+      height: 5px;
       background: $light-color;
       border-radius: 5px;
       margin-bottom: .5rem;
@@ -200,74 +264,102 @@ h4 {
   }
 }
 
+// Opinion
 #testimonial {
+  background: $background-color;
+  // height: 60vh;
   
   .testimonials {
     display: flex;
-    padding: 0 3rem;
+    // padding: 0 3rem;
   }
 
   .opinion {
-    padding: 3rem;
+    // padding: 1rem;
     img {
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
     }
 
     .p1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+      font-size: 1rem;
+      margin-bottom: .5rem;
+      color: #333;
 
     }
   }
 }
 
+// Hire Me
 #hire-me {
-  background: $main-color;
+  background: $dark-color;
 
   .hire {
-    margin: 2rem 0 2rem 0;
-    line-height: 1.5;
+    // margin: 2rem 0 2rem 0;
+    // line-height: 1.5;
 
     h1 {
-      font-size: 3rem;
-      text-transform: uppercase;
+      padding-bottom: 2rem;
     }
 
     p {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      padding: 0 7rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: $background-color;
+      color: set-text-color($dark-color);
+      border: 1px solid $light-color;
+      transition: $hover-speed;
+    }
+
+    .btn:hover {
+      background: $main-color;
+      border: none;
     }
   }
 }
 
+// Blog Post/Article
 #blog-post {
+  background: $background-color;
   .posts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5rem;
+    grid-gap: 2rem;
 
     .post {
-      background: #333;
-
+      background: $background-color;
       &-container {
-        padding: 1.5rem;
+        margin: .5rem;
         text-align: start;
+        
+        p {
 
-        h2 {
-          margin-bottom: 1rem;
-          color: $main-color;
-          cursor: pointer;
+          a {
+            margin-bottom: .3rem;
+            color: $main-color;
+            font-size: 1rem;
+            line-height: 0;
+            text-transform: capitalize;
+          }
+        }
+
+        .date {
+          font-size: .7rem;
+          color: $light-color;
         }
 
         p {
-          margin-bottom: .8rem;
-          text-transform: capitalize;
+          margin-bottom: .5rem;
+          // text-transform: capitalize;
+          line-height: 1.2;
         }
 
         .p1 {
-          font-size: 1.2rem;
+          // font-size: 1.2rem;
           margin-bottom: 1.2rem;
         }
       }
@@ -275,11 +367,24 @@ h4 {
   }
   .blog-btn {
     margin-top: 3rem;
-    padding: .8rem 4rem;
+    padding: 1rem 3.5rem;
+    transition: $hover-speed;
+    background: $background-color;
+    border: 1px solid $light-color;
+    color: set-text-color($dark-color);
+  }
+
+  .blog-btn:hover {
+    background: $main-color;
+    border: none;
   }
 }
 
+// Contact 
 #contact {
+  // h1 {
+  //   margin-top: 0;
+  // }
   .text-fields {
     display: grid;
     grid-template-areas: 
@@ -309,41 +414,76 @@ h4 {
       border-top: none;
       border-right: none;
       border-left: none;
+      resize: none;
+      color: #fff;
+    }
+
+    input::first-letter {
+      text-transform: capitalize;
+    }
+
+    input:focus {
+      border-bottom: 2px solid blue;
+      outline: none;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      text-transform: uppercase;
+    }
+
+    textarea:focus {
+      border-bottom: 2px solid blue;
+      outline: none;
     }
   }
 
   .form-btn {
     margin-top: 3rem;
-    padding: 2rem 8rem;
-    border: $main-color 5px solid;
-    font-size: 1.5rem;
+    padding: 1.5rem 5rem;
+    transition: $hover-speed;
+    background: $background-color;
+    color: set-text-color($dark-color);
+    border: $light-color 1px solid;
+    // font-size: 1.5rem;
+  }
+
+  .form-btn:hover {
+    background: $main-color;
+    border: none;
   }
 }
 
+// Appreciation Section
 #gratitude {
-  div {
-    p {
-      padding: 0 5rem;
-    }
+  background: $background-color;
+
+  .lead {
+    padding-bottom: 1rem;
+  }
+
+  p {
+    padding: 0 4rem;
   }
 }
 
 #main-footer {
-  margin-top: 4rem;
   border-top: 2px #333 solid;
-  padding-top: 4rem;
-  margin-top: 10rem;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  // margin-bottom: 3rem;
+  // align-items: flex-end;
   .footer-content {
 
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3rem;
-    align-items: flex-end;
 
     .fab {
       padding: 1rem;
-      border: $light-color 1px solid;
+      margin-bottom: 1rem;
+      transition: $hover-speed;
     }
 
     .fab:hover {
@@ -357,3 +497,5 @@ h4 {
   }
 }
 
+// Import Media Queries
+@import 'media';
