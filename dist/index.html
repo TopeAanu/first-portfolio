@@ -271,7 +271,7 @@
     </div>
   </section>
 
-  <!-- Blog Post Section -->
+  <!-- Blog Post -->
   <section id="blog-post" class="py-3 text-center">
     <div class="container">
       <h1 class="lead">Blog posts</h1>
@@ -311,16 +311,20 @@
     </div>
   </section>
 
-  <!-- Contact Me Section -->
+  <!-- Contact -->
   <section id="contact" class="py-3 text-center">
     <div class="container">
       <h1 class="lead">Contact Me</h1>
-      <form action="">
+      <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
         <div class="text-fields">
 
           <input type="text" class="text-input name-input" placeholder="Name" name="name">
           <input type="email" class="text-input email-input" placeholder="Email" name="email">
           <textarea class="text-input message-input" placeholder="Messge" name="message"></textarea>
+
+          <div class="my-3">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
         </div>
         <button type="submit" class="btn-light form-btn">Submit</button>
       </form>
