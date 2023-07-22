@@ -21,8 +21,10 @@
   }
 }
 
+// Mobile Phones 
 @media (max-width: 500px) {
 
+  // Resize Container
   .container {
     padding: 0 1.5rem;
   }
@@ -120,6 +122,10 @@
   
     .testimonials {
       flex-direction: column;
+
+      .opinion {
+        padding: 1rem;
+      }
     }
   }
 

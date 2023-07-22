@@ -451,23 +451,23 @@ h4 {
     height: 100px;
     border-radius: 50%; }
   #testimonial .opinion .p1 {
-    font-size: 1rem;
+    font-size: .9rem;
     margin-bottom: .5rem;
-    color: #333; }
+    color: #ddd; }
 
 #hire-me {
   background: #0a0a0f; }
-  #hire-me .hire h1 {
+  #hire-me h1 {
     padding-bottom: 2rem; }
-  #hire-me .hire p {
+  #hire-me p {
     padding: 0 7rem;
     margin-bottom: 2rem; }
-  #hire-me .hire .btn {
+  #hire-me .btn {
     background: #03000a;
     color: #fff;
     border: 1px solid #ddd;
     transition: all 0.5s; }
-  #hire-me .hire .btn:hover {
+  #hire-me .btn:hover {
     background: #13b1f0e7;
     border: none; }
 
@@ -517,29 +517,25 @@ h4 {
     grid-area: email; }
   #contact .text-fields .message-input {
     grid-area: message;
-    height: 200px; }
+    height: 100px; }
   #contact .text-fields .text-input {
     padding: .5rem 1rem; }
   #contact .text-fields input,
   #contact .text-fields textarea {
     background: #0a0a0f;
+    border: none;
     border-bottom: 2px solid #333;
-    border-top: none;
-    border-right: none;
-    border-left: none;
     resize: none;
-    color: #fff; }
-  #contact .text-fields input::first-letter {
-    text-transform: capitalize; }
-  #contact .text-fields input:focus {
-    border-bottom: 2px solid blue;
+    color: #ddd; }
+  #contact .text-fields input:focus,
+  #contact .text-fields textarea:focus {
+    border-bottom: 2px solid #13b1f0e7;
     outline: none; }
   #contact .text-fields input::placeholder,
   #contact .text-fields textarea::placeholder {
-    text-transform: uppercase; }
-  #contact .text-fields textarea:focus {
-    border-bottom: 2px solid blue;
-    outline: none; }
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0; }
 
 #contact .form-btn {
   margin-top: 3rem;
@@ -631,6 +627,8 @@ h4 {
     grid-template-columns: 1fr; }
   #testimonial .testimonials {
     flex-direction: column; }
+    #testimonial .testimonials .opinion {
+      padding: 1rem; }
   #hire-me .hire {
     margin: 0; }
     #hire-me .hire p {
