@@ -346,7 +346,7 @@ h4 {
 
 #header-home:before {
   content: '';
-  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  background: url("/img/showcase.jpg") no-repeat center right/cover;
   position: absolute;
   top: 0;
   left: 0;
