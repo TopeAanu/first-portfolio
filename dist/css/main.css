@@ -333,7 +333,8 @@ h4 {
   #header-home .home-content {
     text-align: left;
     padding-top: 18%;
-    color: inherit; }
+    color: inherit;
+    position: relative; }
     #header-home .home-content .hello {
       font-size: 5rem;
       line-height: 1.2; }
