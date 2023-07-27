@@ -235,6 +235,7 @@
   }
 
   // Reduce All Leads
+  #about,
   #interest,
   #work-experience,
   #skill,
@@ -251,6 +252,8 @@
       padding-bottom: 2rem;
       text-transform: uppercase;
     }
+
+    border-top: 1px solid #333;
   }
 
   #about {
@@ -278,7 +281,7 @@
   #header {
     // Content
     &-home .home-content {
-      padding-top: 55%;
+      padding-top: 60%;
     }
   }
 }

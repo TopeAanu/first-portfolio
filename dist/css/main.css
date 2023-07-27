@@ -673,19 +673,31 @@ h4 {
     grid-template-areas: 'name' 'email' 'message'; }
   #gratitude p {
     padding: 0 .5rem; }
-  #interest .lead,
-  #work-experience .lead,
-  #skill .lead,
-  #project .lead,
-  #testimonial .lead,
-  #hire-me .lead,
-  #blog-post .lead,
-  #contact .lead,
-  #gratitude .lead {
-    font-size: 1.7rem;
-    margin-top: 1rem;
-    padding-bottom: 2rem;
-    text-transform: uppercase; }
+  #about,
+  #interest,
+  #work-experience,
+  #skill,
+  #project,
+  #testimonial,
+  #hire-me,
+  #blog-post,
+  #contact,
+  #gratitude {
+    border-top: 1px solid #333; }
+    #about .lead,
+    #interest .lead,
+    #work-experience .lead,
+    #skill .lead,
+    #project .lead,
+    #testimonial .lead,
+    #hire-me .lead,
+    #blog-post .lead,
+    #contact .lead,
+    #gratitude .lead {
+      font-size: 1.7rem;
+      margin-top: 1rem;
+      padding-bottom: 2rem;
+      text-transform: uppercase; }
   #about .lead-2 {
     font-size: 1.7rem;
     margin-top: 1rem;
@@ -697,4 +709,4 @@ h4 {
   .container {
     padding: 0 1.5rem; }
   #header-home .home-content {
-    padding-top: 55%; } }
+    padding-top: 60%; } }
