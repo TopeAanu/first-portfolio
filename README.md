@@ -1,1 +1,1 @@
-My single page portfolio website built with sass. check it out!!
+Portfolio website built with sass. check it out!!
