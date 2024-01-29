@@ -284,7 +284,19 @@ body {
   font-family: 'Open', sans-serif;
   line-height: 1.5;
   background: #0a0a0f;
-  color: #ddd; }
+  color: #ddd;
+  transition: #03000a 0.3s ease; }
+  body.light-mode {
+    background-color: #fff;
+    color: #000; }
+  body .header-home {
+    background-color: #fff;
+    color: #000; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 a {
   text-decoration: none;
@@ -304,11 +316,13 @@ h4 {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding-top: .5rem; }
+  padding-top: .5rem;
+  z-index: 0;
+  top: 0;
+  max-width: 1000px;
+  margin: auto; }
   #main-nav ul {
     position: relative;
-    top: 0;
-    left: 0;
     display: flex;
     margin-top: 1.5rem;
     align-items: center; }
@@ -316,7 +330,12 @@ h4 {
       font-size: 1rem;
       font-weight: bold;
       padding-right: 1rem;
-      cursor: pointer; }
+      cursor: pointer;
+      border-radius: 50%; }
+      #main-nav ul .logo img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%; }
     #main-nav ul .logo:hover {
       transition: all .5s;
       opacity: .5; }
@@ -347,7 +366,6 @@ h4 {
 
 #header-home:before {
   content: '';
-  background: url("/img/showcase.jpg") no-repeat center right/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -363,8 +381,8 @@ h4 {
 
 #about .frame {
   position: relative;
-  width: 350px;
-  height: 400px;
+  width: 150px;
+  height: 200px;
   background: #03000a;
   border-top: #ddd solid 1px; }
 
@@ -384,6 +402,8 @@ h4 {
 #about .bio {
   grid-area: bio;
   padding-left: 10rem; }
+  #about .bio p {
+    font-size: 1.5rem; }
 
 #about .details {
   margin-top: 1rem;
