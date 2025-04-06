@@ -1,1 +1,2 @@
-Portfolio website built with sass. check it out!!
+# Portfolio (No longer used)
+Built a portfolio site with scss. Had fun building this project. 
